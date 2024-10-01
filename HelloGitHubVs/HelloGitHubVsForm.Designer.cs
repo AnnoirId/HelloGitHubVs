@@ -33,12 +33,13 @@
             // 
             // helloButton
             // 
+            this.helloButton.BackColor = System.Drawing.Color.OliveDrab;
             this.helloButton.Location = new System.Drawing.Point(140, 103);
             this.helloButton.Name = "helloButton";
             this.helloButton.Size = new System.Drawing.Size(150, 40);
             this.helloButton.TabIndex = 0;
             this.helloButton.Text = "Hello GitHub";
-            this.helloButton.UseVisualStyleBackColor = true;
+            this.helloButton.UseVisualStyleBackColor = false;
             this.helloButton.Click += new System.EventHandler(this.helloButton_Click);
             // 
             // HelloGitHubVsForm
