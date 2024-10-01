@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.helloButton = new System.Windows.Forms.Button();
+            this.modifierButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // helloButton
@@ -42,11 +43,22 @@
             this.helloButton.UseVisualStyleBackColor = false;
             this.helloButton.Click += new System.EventHandler(this.helloButton_Click);
             // 
+            // modifierButton
+            // 
+            this.modifierButton.Location = new System.Drawing.Point(140, 176);
+            this.modifierButton.Name = "modifierButton";
+            this.modifierButton.Size = new System.Drawing.Size(150, 43);
+            this.modifierButton.TabIndex = 1;
+            this.modifierButton.Text = "Modifier la couleur de l\'arriere paln du formulaire";
+            this.modifierButton.UseVisualStyleBackColor = true;
+            this.modifierButton.Click += new System.EventHandler(this.modifierButton_Click);
+            // 
             // HelloGitHubVsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 294);
+            this.Controls.Add(this.modifierButton);
             this.Controls.Add(this.helloButton);
             this.Name = "HelloGitHubVsForm";
             this.Text = "GitHub et Git pour visual Studio";
@@ -57,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button helloButton;
+        private System.Windows.Forms.Button modifierButton;
     }
 }
 
